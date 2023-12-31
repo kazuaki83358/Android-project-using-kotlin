@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">The Greeting App</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="click_me">Click me</string>
+</resources>
