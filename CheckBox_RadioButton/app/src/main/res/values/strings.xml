@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CheckBox_RadioButton</string>
+    <string name="textview_text1">What do you to order?</string>
+    <string name="burrger_text">Burger</string>
+    <string name="pizza_text">Pizza</string>
+    <string name="momos_text">Momos</string>
+    <string name="coco_cola_text">Coco cola</string>
+    <string name="text_view2">Select additional Drink with your meal</string>
+    <string name="pepsi_text">Pepsi</string>
+    <string name="fanta_text">Fanta</string>
+    <string name="confirm_order_text">Confirm Order</string>
+    <string name="Orders_text" />
+    <string name="your_order_text">Your Order</string>
+</resources>
