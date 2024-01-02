@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Implicit_app</string>
+    <string name="TextView1">Hello Welcome To Implicit App</string>
+    <string name="redirect">Click to Redirect site</string>
+</resources>
