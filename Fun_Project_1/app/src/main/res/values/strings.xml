@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Fun_Project_!</string>
+    <string name="about_text">Get Your fortune with your name date of birth</string>
+    <string name="about_text2">This app is for fun and whatever you get as your fortune don\'t take seriously</string>
+    <string name="get_started_text">Get Started</string>
+    <string name="Welcome_text">Welcome to Fortune Teller App.</string>
+    <string name="userName_text">Enter Your Name</string>
+    <string name="userDateOfBirth_text">Enter Your Date Of Birth</string>
+    <string name="Button_text">Let See</string>
+    <string name="this_is_for_you_text">This is for you</string>
+    <string name="blank">--------------</string>
+    <string name="share_text">Share</string>
+</resources>
