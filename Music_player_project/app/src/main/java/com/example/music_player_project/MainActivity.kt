@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.widget.SeekBar
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import androidx.core.os.postDelayed
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var mediaPlayer: MediaPlayer
     private lateinit var timeTxt: TextView
     private lateinit var seekBar: SeekBar
+    @SuppressLint("DiscouragedApi", "SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -34,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         val btn4: AppCompatButton = findViewById(R.id.btn4)
 
         // declaring textView
-        val titleTxt: TextView = findViewById(R.id.textView2)
+        var titleTxt: TextView = findViewById(R.id.textView2)
         timeTxt = findViewById(R.id.textview3)
 
         // declaring seek bar
@@ -58,11 +60,32 @@ class MainActivity : AppCompatActivity() {
 
             handler.postDelayed(updateSongTime, 100)
         }
-
+        //setting the music title
+        val resourceId = resources.getIdentifier("softy", "raw", packageName)
+        titleTxt.text = getString(resourceId)
         // pause button
         btn4.setOnClickListener {
             mediaPlayer.pause()
-
+        }
+        //Forward Button
+        btn2.setOnClickListener(){
+            val temp = startTime
+            if ((temp + forwardTime)<=finalTime){
+                startTime += forwardTime
+                mediaPlayer.seekTo(startTime.toInt())
+            }else{
+                Toast.makeText(this,"Can't jump forward",Toast.LENGTH_LONG).show()
+            }
+        }
+        //Backward Button
+        btn1.setOnClickListener(){
+            val temp = startTime.toInt()
+            if ((temp - backwardTime)>=0){
+                startTime -= backwardTime
+                mediaPlayer.seekTo(startTime.toInt())
+            }else{
+                Toast.makeText(this,"Can't jump backward",Toast.LENGTH_LONG).show()
+            }
         }
     }
 
