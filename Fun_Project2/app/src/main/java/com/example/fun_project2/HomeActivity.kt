@@ -10,7 +10,6 @@ class HomeActivity : AppCompatActivity(), MyAdapter.OnItemClickListener {
 
     // Declare items as a property of the HomeActivity class
     private val items = listOf(
-<<<<<<< HEAD
         ListItem("Java Intro"),
         ListItem("Java Get Started"),
         ListItem("Java Syntax"),
@@ -23,17 +22,6 @@ class HomeActivity : AppCompatActivity(), MyAdapter.OnItemClickListener {
         ListItem("Java String"),
         ListItem("Java Math"),
         ListItem("Java Booleans")
-=======
-        ListItem("Item 1"),
-        ListItem("Item 2"),
-        ListItem("Item 3"),
-        ListItem("Item 4"),
-        ListItem("Item 5"),
-        ListItem("Item 6"),
-        ListItem("Item 7"),
-        ListItem("Item 8"),
-        ListItem("Item 9")
->>>>>>> d1514037ace0243c93123f3b3985028637a28f80
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -61,7 +49,6 @@ class HomeActivity : AppCompatActivity(), MyAdapter.OnItemClickListener {
         when (position) {
             0 -> intent.putExtra("selected_item", "Text for Item 1")
             1 -> intent.putExtra("selected_item", "Text for Item 2")
-<<<<<<< HEAD
             2 -> intent.putExtra("selected_item", "Text for Item 3")
             3 -> intent.putExtra("selected_item", "Text for Item 4")
             4 -> intent.putExtra("selected_item", "Text for Item 5")
@@ -72,8 +59,6 @@ class HomeActivity : AppCompatActivity(), MyAdapter.OnItemClickListener {
             9 -> intent.putExtra("selected_item", "Text for Item 10")
             10 -> intent.putExtra("selected_item", "Text for Item 11")
             11 -> intent.putExtra("selected_item", "Text for Item 13")
-=======
->>>>>>> d1514037ace0243c93123f3b3985028637a28f80
             // Add more cases for other items if needed
             else -> intent.putExtra("selected_item", "Default Text")
         }
@@ -82,3 +67,4 @@ class HomeActivity : AppCompatActivity(), MyAdapter.OnItemClickListener {
     }
 
 }
+
