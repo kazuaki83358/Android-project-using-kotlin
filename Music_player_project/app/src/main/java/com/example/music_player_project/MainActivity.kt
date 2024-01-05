@@ -9,9 +9,9 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
-import androidx.core.os.postDelayed
 import java.util.concurrent.TimeUnit
 
+@Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
     private val handler = Handler()
     private var startTime = 0.0
@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         val btn4: AppCompatButton = findViewById(R.id.btn4)
 
         // declaring textView
-        var titleTxt: TextView = findViewById(R.id.textView2)
+        val titleTxt: TextView = findViewById(R.id.textView2)
         timeTxt = findViewById(R.id.textview3)
 
         // declaring seek bar
@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
             mediaPlayer.pause()
         }
         //Forward Button
-        btn2.setOnClickListener(){
+        btn2.setOnClickListener {
             val temp = startTime
             if ((temp + forwardTime)<=finalTime){
                 startTime += forwardTime
@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         //Backward Button
-        btn1.setOnClickListener(){
+        btn1.setOnClickListener {
             val temp = startTime.toInt()
             if ((temp - backwardTime)>=0){
                 startTime -= backwardTime
