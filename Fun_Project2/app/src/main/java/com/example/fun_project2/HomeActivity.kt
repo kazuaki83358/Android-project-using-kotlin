@@ -58,7 +58,7 @@ class HomeActivity : AppCompatActivity(), MyAdapter.OnItemClickListener {
             8 -> intent.putExtra("selected_item", "Text for Item 9")
             9 -> intent.putExtra("selected_item", "Text for Item 10")
             10 -> intent.putExtra("selected_item", "Text for Item 11")
-            11 -> intent.putExtra("selected_item", "Text for Item 12")
+            11 -> intent.putExtra("selected_item", "Text for Item 13")
             // Add more cases for other items if needed
             else -> intent.putExtra("selected_item", "Default Text")
         }
