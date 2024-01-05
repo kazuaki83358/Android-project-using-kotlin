@@ -6,7 +6,14 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class MyAdapter(private val items: List<ListItem>) : RecyclerView.Adapter<MyAdapter.ViewHolder>() {
+class MyAdapter(private val items: List<ListItem>, private val listener: OnItemClickListener) :
+    RecyclerView.Adapter<MyAdapter.ViewHolder>() {
+
+    // Define the interface for click events
+    interface OnItemClickListener {
+        fun onItemClick(position: Int)
+    }
+
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val textView: TextView = itemView.findViewById(R.id.item_text)
     }
@@ -18,6 +25,11 @@ class MyAdapter(private val items: List<ListItem>) : RecyclerView.Adapter<MyAdap
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.textView.text = items[position].text
+
+        // Set click listener for each item
+        holder.itemView.setOnClickListener {
+            listener.onItemClick(position)
+        }
     }
 
     override fun getItemCount(): Int {
