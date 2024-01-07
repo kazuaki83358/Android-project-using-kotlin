@@ -12,7 +12,7 @@ class HomeActivity : AppCompatActivity(), MyAdapter.OnItemClickListener {
     private val items = listOf(
         ListItem("Java Intro"),
         ListItem("Java Get Started"),
-        ListItem(" Syntax"),
+        ListItem("Java Syntax"),
         ListItem("Java Output"),
         ListItem("Java Comments"),
         ListItem("Java Variables"),
