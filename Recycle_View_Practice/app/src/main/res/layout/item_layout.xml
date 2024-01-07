@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="70dp"
+    android:layout_marginRight="10dp">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="95dp"
+        android:layout_height="105dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/a"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/text_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/imageview"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        tools:text="Name" />
+
+    <TextView
+        android:id="@+id/text_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view1"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/imageview"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="Phone Number" />
+
+</RelativeLayout>
