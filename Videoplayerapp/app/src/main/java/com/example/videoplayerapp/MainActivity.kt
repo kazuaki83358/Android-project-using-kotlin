@@ -24,13 +24,6 @@ class MainActivity : AppCompatActivity() {
         mediaController.setAnchorView(videoView)
         mediaController.setMediaPlayer(videoView)
         videoView.setMediaController(mediaController)
-        //playing from online
-        val videoView2 : VideoView = findViewById(R.id.video_view2)
-        val uri = Uri.parse("https://aniwatch.to/watch/spy-x-family-17977?ep=89506")
-        val mediaController2 = MediaController(this)
-        mediaController2.setAnchorView(videoView2)
-        mediaController2.setMediaPlayer(videoView2)
-        videoView2.setMediaController(mediaController2)
-        videoView2.start()
+
     }
 }
