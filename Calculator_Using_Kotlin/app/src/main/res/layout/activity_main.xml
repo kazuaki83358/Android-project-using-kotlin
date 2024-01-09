@@ -2,17 +2,337 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
+        android:layout_width="335dp"
+        android:layout_height="109dp"
+        android:gravity="right"
+        android:text="00"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193"
+        tools:ignore="HardcodedText,RtlHardcoded,TextContrastCheck,TextSizeCheck,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="348dp"
+        android:layout_height="104dp"
+        android:gravity="right"
+        android:text="00"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.329" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/equal"
+        android:layout_width="142dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/background3"
+        android:text="="
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="414dp"
+        android:layout_height="639dp"
+        android:layout_marginTop="290dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background2"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="255dp"
+        android:layout_marginTop="225dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/divide"
+            android:layout_width="71dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_shape_color"
+            android:text="/"
+            android:textColor="#06d6a0"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/multiply"
+            android:layout_width="71dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_shape_color"
+            android:text="X"
+            android:textColor="#06d6a0"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/subtract"
+            android:layout_width="71dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_shape_color"
+            android:text="-"
+            android:textColor="#06d6a0"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add"
+            android:layout_width="71dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_shape_color"
+            android:text="+"
+            android:textColor="#06d6a0"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="225dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nine"
+            android:layout_width="71dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_shape_color"
+            android:text="9"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/six"
+            android:layout_width="71dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_shape_color"
+            android:text="6"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/three"
+            android:layout_width="71dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_shape_color"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/double_zero"
+            android:layout_width="71dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_shape_color"
+            android:text="00"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextContrastCheck,DuplicateSpeakableTextCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="80dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/delete"
+            android:layout_width="71dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_shape_color"
+            android:text="⌫"
+            android:textColor="#6F0505"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/eight"
+            android:layout_width="71dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_shape_color"
+            android:text="8"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/five"
+            android:layout_width="71dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_shape_color"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/two"
+            android:layout_width="71dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_shape_color"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/zero"
+            android:layout_width="71dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_shape_color"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="250dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/AC"
+            android:layout_width="71dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_shape_color"
+            android:text="AC"
+            android:textColor="#6F0505"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/seven"
+            android:layout_width="71dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_shape_color"
+            android:text="7"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/four"
+            android:layout_width="71dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_shape_color"
+            android:text="4"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/one"
+            android:layout_width="71dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_shape_color"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dot"
+            android:layout_width="71dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_shape_color"
+            android:text="."
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
