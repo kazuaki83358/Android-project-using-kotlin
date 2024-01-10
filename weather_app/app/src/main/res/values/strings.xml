@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">weather</string>
+    <string name="welcome">Welcome!\nYour weather, at a glance.</string>
+    <string name="by">By\n\n Nishant Rajput</string>
+</resources>
