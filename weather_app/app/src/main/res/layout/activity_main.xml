@@ -24,8 +24,8 @@
 
     <TextView
         android:id="@+id/city"
-        android:layout_width="182dp"
-        android:layout_height="53dp"
+        android:layout_width="143dp"
+        android:layout_height="35dp"
         android:layout_marginTop="16dp"
         android:drawablePadding="15dp"
         android:text=""
@@ -98,33 +98,16 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/lottieAnimationView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/city"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="TextSizeCheck" />
-
-    <TextView
-        android:id="@+id/time"
-        android:layout_width="128dp"
-        android:layout_height="34dp"
-        android:gravity="center"
-        android:text="@string/_3_00_am"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/lottieAnimationView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/day"
-        app:layout_constraintTop_toBottomOf="@+id/searchView"
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/min"
-        android:layout_width="144dp"
-        android:layout_height="40dp"
+        android:layout_width="178dp"
+        android:layout_height="48dp"
         android:gravity="center"
         android:text="@string/max_00_00_c"
         android:textColor="@color/white"
@@ -132,15 +115,16 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.239"
+        app:layout_constraintHorizontal_bias="0.143"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/temp"
+        app:layout_constraintVertical_bias="0.567"
         tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/max"
-        android:layout_width="144dp"
-        android:layout_height="43dp"
+        android:layout_width="179dp"
+        android:layout_height="48dp"
         android:gravity="center"
         android:text="@string/min_00_00_c"
         android:textColor="@color/white"
@@ -148,9 +132,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintHorizontal_bias="0.913"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/temp"
+        app:layout_constraintVertical_bias="0.583"
         tools:ignore="TextSizeCheck" />
 
     <FrameLayout
