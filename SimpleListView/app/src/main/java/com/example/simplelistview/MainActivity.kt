@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Adapter View: ListView
-        var listView: ListView = findViewById(R.id.listView)
+        val listView: ListView = findViewById(R.id.listView)
 
         // Data Source: Array of String
         val androidTopics = arrayOf(
