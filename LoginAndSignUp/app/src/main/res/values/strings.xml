@@ -5,4 +5,11 @@
     <string name="login">Login</string>
     <string name="sign_up">Sign Up</string>
     <string name="welcome">Welcome</string>
+    <string name="headline">ひさしぶり!</string>
+    <string name="long_time_no_see">Long time no see!</string>
+    <string name="logintext">Login</string>
+    <string name="password">password</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="do_you_not_have_an_account">Do you not have an account?</string>
+    <string name="sign_up2">Sign-up</string>
 </resources>
