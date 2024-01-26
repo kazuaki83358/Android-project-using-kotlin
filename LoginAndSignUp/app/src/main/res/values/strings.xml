@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Login And Sign Up</string>
+    <string name="ani">AniNyuz</string>
+    <string name="description">Watch anime online in HD, with subtitles or dubbed, on your phone or computer.</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="welcome">Welcome</string>
+</resources>
