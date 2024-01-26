@@ -19,5 +19,5 @@
     <string name="register">Register</string>
     <string name="are_you_already_a_member">Are you already a member?</string>
     <string name="log_in">log in</string>
-    <string name="thankyou">Thank Your For Login\n Now i have your password</string>
+    <string name="thankyou">Thank You For Login\n Now i have your password</string>
 </resources>
