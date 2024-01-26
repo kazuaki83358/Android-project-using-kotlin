@@ -25,12 +25,14 @@ class WelcomeActivity : AppCompatActivity() {
         binding.login.setOnClickListener(){
             Intent(this,MainActivity::class.java).also {
                 startActivity(it)
+                finish()
             }
         }
         //signup button use set
         binding.signup.setOnClickListener(){
             Intent(this,SignUpActivity::class.java).also {
                 startActivity(it)
+                finish()
             }
         }
     }

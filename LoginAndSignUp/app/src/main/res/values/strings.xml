@@ -12,4 +12,11 @@
     <string name="forget_password">Forget Password</string>
     <string name="do_you_not_have_an_account">Do you not have an account?</string>
     <string name="sign_up2">Sign-up</string>
+    <string name="sign_up_headline">ようこそ!</string>
+    <string name="welcome2">Welcome!</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="are_you_already_a_member">Are you already a member?</string>
+    <string name="log_in">log in</string>
 </resources>
