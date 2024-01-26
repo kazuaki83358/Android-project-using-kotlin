@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Login And Sign Up</string>
+    <string name="app_name">Aninnyz</string>
     <string name="ani">AniNyuz</string>
     <string name="description">Watch anime online in HD, with subtitles or dubbed, on your phone or computer.</string>
     <string name="login">Login</string>
@@ -19,4 +19,5 @@
     <string name="register">Register</string>
     <string name="are_you_already_a_member">Are you already a member?</string>
     <string name="log_in">log in</string>
+    <string name="thankyou">Thank Your For Login\n Now i have your password</string>
 </resources>

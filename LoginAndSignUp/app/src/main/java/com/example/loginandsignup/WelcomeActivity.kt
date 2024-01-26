@@ -7,6 +7,8 @@ import android.os.Bundle
 import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
 import com.example.loginandsignup.databinding.ActivityWelcomeBinding
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 
 class WelcomeActivity : AppCompatActivity() {
     private val binding by lazy {
@@ -14,6 +16,7 @@ class WelcomeActivity : AppCompatActivity() {
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         val aninyuzText = "AniNyuz"
         val spanableString = SpannableString(aninyuzText)
         spanableString.setSpan(ForegroundColorSpan(Color.parseColor("#FFFFFF")),0,2,0)
@@ -22,14 +25,14 @@ class WelcomeActivity : AppCompatActivity() {
         binding.ani.text = spanableString
         setContentView(binding.root)
         //login button use set
-        binding.login.setOnClickListener(){
+        binding.login.setOnClickListener {
             Intent(this,MainActivity::class.java).also {
                 startActivity(it)
                 finish()
             }
         }
         //signup button use set
-        binding.signup.setOnClickListener(){
+        binding.signup.setOnClickListener {
             Intent(this,SignUpActivity::class.java).also {
                 startActivity(it)
                 finish()
