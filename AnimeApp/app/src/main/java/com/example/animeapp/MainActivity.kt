@@ -33,15 +33,10 @@ class MainActivity : AppCompatActivity() {
         val adapter = AnimeAdapter(animeList)
         recyclerView.adapter = adapter
         recyclerView.adapter = adapter
-        getData()
+        getTopAnime()
     }
 
-    private fun openUrlInBrowser(url: Any) {
-        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url.toString()))
-        startActivity(intent)
-    }
-
-    private fun getData() {
+    private fun getTopAnime() {
         val retrofit = createRetrofit()
         val animeInterface = retrofit.create(AnimeInterface::class.java)
         val call = animeInterface.getTopAnime()

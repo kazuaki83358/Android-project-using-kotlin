@@ -70,19 +70,20 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="405dp"
-        android:layout_height="80dp"
-        android:layout_marginBottom="4dp"
+        android:layout_width="415dp"
+        android:layout_height="61dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/navigate_bar"
         tools:ignore="ContentDescription" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/homeBtn"
-        android:layout_width="40dp"
-        android:layout_height="45dp"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
         android:background="@drawable/home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -101,7 +102,7 @@
         android:textColor="#039BE5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintHorizontal_bias="0.074"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recycleView"
         app:layout_constraintVertical_bias="0.979"
@@ -109,8 +110,8 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/search_btn"
-        android:layout_width="40dp"
-        android:layout_height="44dp"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
         android:background="@drawable/icons_search"
         app:layout_constraintBaseline_toBaselineOf="@+id/homeBtn"
         app:layout_constraintEnd_toEndOf="parent"
@@ -133,12 +134,12 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/watchList_btn"
-        android:layout_width="38dp"
-        android:layout_height="44dp"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
         android:background="@drawable/watch_list"
         app:layout_constraintBaseline_toBaselineOf="@+id/search_btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintHorizontal_bias="0.918"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
