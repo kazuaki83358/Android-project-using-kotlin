@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
 @Suppress("DEPRECATION")
-class AnimeAdapter(var animeList: List<Data>, param: (Any) -> Unit): RecyclerView.Adapter<AnimeAdapter.MyViewHolder>() {
+class AnimeAdapter(var animeList: List<Data>) : RecyclerView.Adapter<AnimeAdapter.MyViewHolder>() {
     inner class MyViewHolder(itemView : View):RecyclerView.ViewHolder(itemView){
         var animeImage : ImageView
         var animeName : TextView

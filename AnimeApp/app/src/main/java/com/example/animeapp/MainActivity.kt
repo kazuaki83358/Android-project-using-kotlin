@@ -29,9 +29,9 @@ class MainActivity : AppCompatActivity() {
             LinearLayoutManager.HORIZONTAL,
             false)
         recyclerView.layoutManager = layoutManager
-        val adapter = AnimeAdapter(emptyList()) { url ->
-            openUrlInBrowser(url)
-        }
+        val animeList: ArrayList<Data> = ArrayList()
+        val adapter = AnimeAdapter(animeList)
+        recyclerView.adapter = adapter
         recyclerView.adapter = adapter
         getData()
     }
