@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Otaku Orbit</string>
+    <string name="by_n_nishant_rajput">By\n Nishant Rajput</string>
+    <string name="otaku_orbit">Otaku Orbit</string>
+    <string name="what_do_you_want_to_watch">What do you want to watch?</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="watch_list">Watch list</string>
+    <string name="naruto">Naruto</string>
+    <string name="top_animes">Top Animes</string>
+    <string name="upcoming_anime">Upcoming Anime</string>
+    <string name="jujutsu_kaisen">jujutsu kaisen</string>
+</resources>
