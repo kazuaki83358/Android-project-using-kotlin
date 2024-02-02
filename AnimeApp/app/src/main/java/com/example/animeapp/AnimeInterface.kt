@@ -8,4 +8,7 @@ interface AnimeInterface {
     @GET("top/anime")
     fun getTopAnime(
     ): Call<TopAnime>
+    @GET("seasons/upcoming")
+    fun getUpcomingAnime(
+    ):Call<UpcomingAanime>
 }
