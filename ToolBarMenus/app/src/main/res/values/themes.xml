@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ToolBarMenus" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/primary_color</item>
+        <!-- ... other customizations ... -->
+
+        <!-- Add the ActionBar style -->
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+    </style>
+
+    <!-- Theme with ActionBar -->
+    <style name="Theme.ToolBarMenus" parent="Base.Theme.ToolBarMenus">
+        <!-- Customize your theme with ActionBar here. -->
+        <!-- To remove the title text from ActionBar -->
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <!-- Custom ActionBar style to hide the title -->
+    <style name="MyActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:displayOptions">showHome|useLogo</item>
+        <item name="android:titleTextStyle">@android:color/transparent</item>
+    </style>
+
+</resources>

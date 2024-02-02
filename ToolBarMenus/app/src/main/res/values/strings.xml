@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ToolBar Menus</string>
+    <string name="home">Home</string>
+    <string name="add">Add</string>
+    <string name="bookmark">BookMark</string>
+    <string name="setting">Setting</string>
+</resources>
