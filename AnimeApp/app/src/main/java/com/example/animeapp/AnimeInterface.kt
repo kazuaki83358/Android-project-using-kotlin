@@ -11,4 +11,7 @@ interface AnimeInterface {
     @GET("seasons/upcoming")
     fun getUpcomingAnime(
     ):Call<UpcomingAanime>
+    @GET("anime")
+    fun getSearch(
+        @Query("q")queryString : String):Call<SearchedAnime>
 }
