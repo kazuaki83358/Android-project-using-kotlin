@@ -1,8 +1,11 @@
 package com.example.animeapp
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -39,6 +42,20 @@ class MainActivity : AppCompatActivity() {
         recyclerViewUpcoming.adapter = upcomingAdapter
         getTopAnime()
         getUpcomingAnime()
+        val searchButton : Button = findViewById(R.id.search_btn)
+        searchButton.setOnClickListener{
+            val intent = Intent(this@MainActivity,SearchedAnimeActivity::class.java)
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+            startActivity(intent)
+            finish()
+        }
+        val searchText : TextView = findViewById(R.id.textView2)
+        searchText.setOnClickListener{
+            val intent = Intent(this@MainActivity,SearchedAnimeActivity::class.java)
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+            startActivity(intent)
+            finish()
+        }
     }
 
     private fun getUpcomingAnime() {

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#242A32"
+        tools:context=".MainActivity">
+
+        <SearchView
+            android:id="@+id/anime_search_bar"
+            android:layout_width="361dp"
+            android:layout_height="47dp"
+            android:background="@drawable/search_background"
+            android:searchIcon="@drawable/icons_search"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.056" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView2"
+            android:layout_width="377dp"
+            android:layout_height="639dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.3"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/anime_search_bar"
+            app:layout_constraintVertical_bias="0.182"
+            tools:listitem="@layout/list_anime" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/navigate_bar"
+            tools:ignore="ContentDescription" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/homeBtn"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:background="@drawable/not_clicked_home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.361"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            android:textAlignment="center"
+            android:textColor="#9E9E9E"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.094"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeBtn"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="TextSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/search_btn"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:background="@drawable/icons_search_clicked"
+            app:layout_constraintBaseline_toBaselineOf="@+id/homeBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="@string/search"
+            android:textAlignment="center"
+            android:textColor="#039BE5"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TextSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/watchList_btn"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:background="@drawable/watch_list"
+            app:layout_constraintBaseline_toBaselineOf="@+id/search_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.918"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:layout_width="88dp"
+            android:layout_height="22dp"
+            android:text="@string/watch_list"
+            android:textAlignment="center"
+            android:textColor="#9E9E9E"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TextSizeCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
