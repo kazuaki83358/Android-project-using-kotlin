@@ -12,4 +12,6 @@
     <string name="login_fragment">Login Fragment</string>
     <string name="message_fragment">Message Fragment</string>
     <string name="setting_fragment">Setting Fragment</string>
+    <string name="Open">Open\n</string>
+    <string name="Close">Close</string>
 </resources>
