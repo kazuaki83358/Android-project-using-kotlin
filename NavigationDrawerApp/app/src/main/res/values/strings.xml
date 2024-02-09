@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Navigation Drawer App</string>
+    <string name="navigation_header">Navigation Header</string>
+    <string name="home_page">Home Page</string>
+    <string name="message_page">Message Page</string>
+    <string name="settings">Settings</string>
+    <string name="profile">Profile</string>
+    <string name="login_page">Login Page</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_fragment">Home Fragment</string>
+    <string name="login_fragment">Login Fragment</string>
+    <string name="message_fragment">Message Fragment</string>
+    <string name="setting_fragment">Setting Fragment</string>
 </resources>
