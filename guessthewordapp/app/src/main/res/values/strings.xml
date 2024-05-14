@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">guess the word app</string>
+    <string name="correct_answer">Correct Answer</string>
+    <string name="text_view">Text View</string>
+    <string name="random_text">Random Text</string>
+    <string name="enter_your_text">Enter Your Text</string>
+    <string name="show">Show</string>
+    <string name="check">Check</string>
+    <string name="next">Next</string>
+</resources>
