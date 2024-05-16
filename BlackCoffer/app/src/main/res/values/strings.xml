@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Netclan Exploser</string>
+    <string name="my_profile">My Profile</string>
+    <string name="my_network">My Network</string>
+    <string name="switch_to_services">Switch to Services</string>
+    <string name="notes">Notes</string>
+    <string name="live_locations">Live Locations</string>
+    <string name="nishant_kumar">Nishant kumar</string>
+    <string name="Open">Open navigation drawer</string>
+    <string name="Close">Close navigation drawer</string>
 </resources>

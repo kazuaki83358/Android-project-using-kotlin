@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/MyProfile"
+            android:icon="@drawable/profile"
+            android:title="@string/my_profile" />
+        <item android:id="@+id/MyNetwork"
+            android:icon="@drawable/network"
+            android:title="@string/my_network" />
+        <item android:id="@+id/Services"
+            android:icon="@drawable/services"
+            android:title="@string/switch_to_services" />
+        <item android:id="@+id/Notes"
+            android:icon="@drawable/notes"
+            android:title="@string/notes" />
+        <item android:id="@+id/Locations"
+            android:icon="@drawable/location"
+            android:title="@string/live_locations" />
+    </group>
+</menu>

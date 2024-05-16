@@ -15,6 +15,6 @@ class MainActivity : AppCompatActivity() {
                 startActivity(it)
                 finish()
             }
-        },1000)
+        },2000)
     }
 }

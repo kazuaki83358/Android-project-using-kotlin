@@ -1,10 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ExploreActivity">
+    android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Your custom app bar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#14213d"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:visibility="visible">
+
+        <!-- Drawer toggle icon -->
+        <ImageView
+            android:id="@+id/icon_drawer_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingStart="6dp"
+            android:src="@drawable/drawer"
+            tools:ignore="ContentDescription,RtlSymmetry,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <!-- Refine icon -->
+        <ImageView
+            android:id="@+id/icon_refine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingEnd="10dp"
+            android:src="@drawable/refine"
+            tools:ignore="ContentDescription,RtlSymmetry,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- DrawerLayout with main content -->
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        tools:context=".ExploreActivity">
+
+        <!-- Main content -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="VisualLintBounds">
+
+            <!-- Your main content UI components here -->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- NavigationView for drawer menu -->
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/header"
+            app:menu="@menu/main_menu"
+            tools:ignore="VisualLintBounds" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</RelativeLayout>
