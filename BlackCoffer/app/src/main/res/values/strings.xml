@@ -8,4 +8,7 @@
     <string name="nishant_kumar">Nishant kumar</string>
     <string name="Open">Open navigation drawer</string>
     <string name="Close">Close navigation drawer</string>
+    <string name="personal">Personal</string>
+    <string name="services">Services</string>
+    <string name="businesses">Businesses</string>
 </resources>

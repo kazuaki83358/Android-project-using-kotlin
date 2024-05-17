@@ -1,11 +1,15 @@
 package com.example.blackcoffer
+
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.ImageView
-import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
 
 class ExploreActivity : AppCompatActivity() {
 
@@ -15,21 +19,19 @@ class ExploreActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_explore)
 
-        // Retrieve the custom ActionBar layout
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         val iconDrawerToggle = findViewById<ImageView>(R.id.icon_drawer_toggle)
         val iconRefine = findViewById<ImageView>(R.id.icon_refine)
+        val tabLayout = findViewById<TabLayout>(R.id.tab_layout)
+        val viewPager = findViewById<ViewPager2>(R.id.view_pager2)
 
-        // Set it as the support ActionBar
         setSupportActionBar(toolbar)
         supportActionBar?.title = ""
-        // Find the DrawerLayout
+
         val drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
 
-        // Handle click events for icons in the custom ActionBar
         iconDrawerToggle.setOnClickListener {
             Log.d(TAG, "Drawer toggle icon clicked")
-            // Check if DrawerLayout is not null before opening the drawer
             drawerLayout?.openDrawer(GravityCompat.START)
         }
 
@@ -39,5 +41,13 @@ class ExploreActivity : AppCompatActivity() {
             // For example, show refine options
             // showRefineOptions()
         }
+
+        val pagerAdapter = MyStateAdapter(this)
+        viewPager.adapter = pagerAdapter
+
+
+        TabLayoutMediator(tabLayout, viewPager) { tab, position ->
+            tab.text = "Tab ${position + 1}"
+        }.attach()
     }
 }
