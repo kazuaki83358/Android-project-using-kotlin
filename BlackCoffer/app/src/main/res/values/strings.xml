@@ -11,4 +11,32 @@
     <string name="personal">Personal</string>
     <string name="services">Services</string>
     <string name="businesses">Businesses</string>
+    <string name="refine">Refine</string>
+    <string name="select_your_availability">Select your availability:</string>
+    <string name="add_your_status">Add Your Status</string>
+    <string name="select_local_distance">Select Hyper Local Distance</string>
+    <string name="hi_community_i_am_open_to_new_connections">Hi Community! I am open to new connections</string>
+    <string name="select_your_purpose">Select Your purpose</string>
+    <string name="coffe">coffe</string>
+    <string name="buisness">Buisness</string>
+    <string name="friendship">Friendship</string>
+    <string name="dating">dating</string>
+    <string-array name="availability_options">
+        <item>Available| Hey Let Us Connect </item>
+        <item>Away| Stay Discrete And Watch  </item>
+        <item>Busy| Don Not Disturb | Will Catch Up Later</item>
+        <item>SOS | Emergency! Need Assistance HELP</item>
+    </string-array>
+    <string-array name="distance_options">
+        <item>1 to 10 km</item>
+        <item>10 to 20 km</item>
+        <item>20 to 30 km</item>
+        <item>30 to 40 km</item>
+        <item>40 to 50 km</item>
+        <item>50 to 60 km</item>
+        <item>60 to 70 km</item>
+        <item>70 to 80 km</item>
+        <item>80 to 90 km</item>
+        <item>90 to 100 km</item>
+    </string-array>
 </resources>

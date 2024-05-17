@@ -15,7 +15,7 @@ import com.google.android.material.tabs.TabLayoutMediator
 class ExploreActivity : AppCompatActivity() {
 
     private val TAG = "ExploreActivity"
-    //i am just designing ui if i had data that i had use that in recycle view to to represent in fragments
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_explore)
@@ -25,15 +25,14 @@ class ExploreActivity : AppCompatActivity() {
         val iconRefine = findViewById<ImageView>(R.id.icon_refine)
         val tabLayout = findViewById<TabLayout>(R.id.tab_layout)
         val viewPager = findViewById<ViewPager2>(R.id.view_pager2)
+        val drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
 
         setSupportActionBar(toolbar)
         supportActionBar?.title = ""
 
-        val drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
-
         iconDrawerToggle.setOnClickListener {
             Log.d(TAG, "Drawer toggle icon clicked")
-            drawerLayout?.openDrawer(GravityCompat.START)
+            drawerLayout.openDrawer(GravityCompat.START)
         }
 
         iconRefine.setOnClickListener {
@@ -43,12 +42,18 @@ class ExploreActivity : AppCompatActivity() {
             }
         }
 
+        // Setting up the ViewPager2 with the adapter
         val pagerAdapter = MyStateAdapter(this)
         viewPager.adapter = pagerAdapter
 
-
+        // Use TabLayoutMediator to link TabLayout and ViewPager2 and set tab titles
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
-            tab.text = "Tab ${position + 1}"
+            tab.text = when (position) {
+                0 -> getString(R.string.personal)
+                1 -> getString(R.string.services)
+                2 -> getString(R.string.businesses)
+                else -> null
+            }
         }.attach()
     }
 }
