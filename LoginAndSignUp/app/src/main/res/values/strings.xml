@@ -20,4 +20,7 @@
     <string name="are_you_already_a_member">Are you already a member?</string>
     <string name="log_in">log in</string>
     <string name="thankyou">Thank You For Login\n Now i have your password</string>
+    <string name="sign_in_with_google">sign in with google</string>
+    <string name="default_web_client_id">772354964761-n9gbev7r6k55u8pc4r44p1pjbutl28pd.apps.googleusercontent.com</string>
+    <string name="google_sign_in">Google sign in</string>
 </resources>
