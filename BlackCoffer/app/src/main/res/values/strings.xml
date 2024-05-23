@@ -21,6 +21,17 @@
     <string name="buisness">Buisness</string>
     <string name="friendship">Friendship</string>
     <string name="dating">dating</string>
+    <string name="explore">Explore</string>
+    <string name="connection">Connection</string>
+    <string name="chat">Chat</string>
+    <string name="contact">Contact</string>
+    <string name="groups">Groups</string>
+    <string name="search">Search...</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="invite">+INVITE</string>
+    <string name="invitee">+ INVITE</string>
+    <string name="namee">Name</string>
     <string-array name="availability_options">
         <item>Available| Hey Let Us Connect </item>
         <item>Away| Stay Discrete And Watch  </item>

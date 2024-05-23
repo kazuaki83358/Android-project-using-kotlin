@@ -28,7 +28,7 @@
         tools:ignore="TextSizeCheck" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/right_textView"
         android:layout_width="404dp"
         android:layout_height="57dp"
         android:background="@drawable/text_background"
@@ -55,11 +55,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/right_textView"
         app:layout_constraintVertical_bias="0.227">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/txtQuestionContainer"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/mouldy"
@@ -85,7 +85,7 @@
         app:layout_constraintVertical_bias="0.215">
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/etUserInput"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:autofillHints=""
@@ -114,7 +114,7 @@
         app:layout_constraintVertical_bias="0.46" >
 
         <Button
-            android:id="@+id/btShow"
+            android:id="@+id/btnShow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -124,7 +124,7 @@
             tools:ignore="ButtonStyle,VisualLintButtonSize" />
 
         <Button
-            android:id="@+id/btCheck"
+            android:id="@+id/btnCheck"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -134,7 +134,7 @@
             tools:ignore="ButtonStyle,VisualLintButtonSize" />
 
         <Button
-            android:id="@+id/btNext"
+            android:id="@+id/btnNext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"

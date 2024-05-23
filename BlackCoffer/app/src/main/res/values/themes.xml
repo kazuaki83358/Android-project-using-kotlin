@@ -1,9 +1,9 @@
+<!-- res/values/themes.xml -->
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.BlackCoffer" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Theme.BlackCoffer" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Light theme customization -->
+        <item name="colorPrimary">@color/my_light_primary</item>
+        <!-- Add other light theme customizations here -->
     </style>
-
-    <style name="Theme.BlackCoffer" parent="Base.Theme.BlackCoffer" />
 </resources>
