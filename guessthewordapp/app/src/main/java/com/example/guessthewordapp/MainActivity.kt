@@ -1,6 +1,9 @@
 package com.example.guessthewordapp
 
+import android.annotation.SuppressLint
+import android.app.Dialog
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -31,6 +34,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var btnCheck: Button
     lateinit var btnNext: Button
 
+    @SuppressLint("SuspiciousIndentation", "SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -53,10 +57,38 @@ class MainActivity : AppCompatActivity() {
         // setOnClickListener
         btnCheck.setOnClickListener {
             if (etUserInput.text.toString().equals(day, ignoreCase = true)) {
-                Toast.makeText(this,"you are right",Toast.LENGTH_SHORT).show()
+              val dialog = Dialog(this@MainActivity)
+                dialog.setContentView(R.layout.correct_dialog)
+                val bthide = dialog.findViewById<Button>(R.id.btConfirmDialog)
+                bthide.setOnClickListener {
+                    dialog.dismiss()
+                    day = Days[random.nextInt(Days.size)]
+                    txtQuestionContainer.text = mixWord(day)
+                    etUserInput.setText("")
+                    txtCorrectAnswer.visibility = View.INVISIBLE
+                    txtRightAnswer.visibility = View.INVISIBLE
+                }
+                dialog.show()
             } else {
                 Toast.makeText(this,"you are wrong",Toast.LENGTH_SHORT).show()
             }
+        }
+
+        //set the listener for next button
+        btnNext.setOnClickListener {
+            day = Days[random.nextInt(Days.size)]
+            txtQuestionContainer.text = mixWord(day)
+
+            etUserInput.setText("")
+            txtCorrectAnswer.visibility = View.INVISIBLE
+            txtRightAnswer.visibility = View.INVISIBLE
+        }
+
+        //set the listener for show button
+        btnShow.setOnClickListener {
+            txtCorrectAnswer.visibility = View.VISIBLE
+            txtRightAnswer.visibility = View.VISIBLE
+            txtRightAnswer.text = day
         }
     }
 
