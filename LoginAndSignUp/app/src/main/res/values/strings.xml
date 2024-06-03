@@ -23,4 +23,18 @@
     <string name="sign_in_with_google">sign in with google</string>
     <string name="default_web_client_id">772354964761-n9gbev7r6k55u8pc4r44p1pjbutl28pd.apps.googleusercontent.com</string>
     <string name="google_sign_in">Google sign in</string>
+    <string name="phone_n_o">phone N.O</string>
+    <string name="login_with_nmobile_number">Login with \nMobile number</string>
+    <string name="_91">+91</string>
+    <string name="send_otp">Send otp</string>
+    <string name="type_your_number">Type your number</string>
+    <string name="verify">Verify</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="_0">0</string>
+    <string name="_00">0</string>
+    <string name="_000">0</string>
+    <string name="_0000">0</string>
+    <string name="_00000">0</string>
+    <string name="_000000">0</string>
+    <string name="welcome_to_home_page">Welcome TO Home Page</string>
 </resources>

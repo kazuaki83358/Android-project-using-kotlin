@@ -14,9 +14,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginAndSignUp"
         tools:targetApi="31">
+        <activity
+            android:name=".OtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PhoneActivity"
+            android:exported="false" />
+
         <meta-data
             android:name="com.google.android.gms.wallet.api.enabled"
             android:value="true" />
+
         <activity
             android:name=".HomeActivity"
             android:exported="false" />
@@ -31,16 +39,13 @@
         </activity>
         <activity
             android:name=".SignUpActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".WelcomeActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>
