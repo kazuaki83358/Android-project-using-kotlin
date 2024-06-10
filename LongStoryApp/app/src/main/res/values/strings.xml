@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Long Story App</string>
+    <string name="long_story_app">Long Story App</string>
+    <string name="write_a_comment">Write a comment</string>
+</resources>

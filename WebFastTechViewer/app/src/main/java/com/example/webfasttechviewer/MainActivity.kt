@@ -10,7 +10,6 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 
 class MainActivity : AppCompatActivity() {
 
@@ -37,7 +36,10 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onReceivedError(view: WebView?, request: WebResourceRequest?, error: WebResourceError?) {
-                view?.loadUrl("file:///android_asset/error.html")
+                // Handle the error here, e.g., show a toast message
+                // Toast.makeText(applicationContext, "Error loading page", Toast.LENGTH_SHORT).show()
+                // Alternatively, you can load a different URL or reload the current URL
+                // webView.loadUrl("https://example.com/error")
             }
         }
 
@@ -47,15 +49,5 @@ class MainActivity : AppCompatActivity() {
 
         // Load the initial URL
         webView.loadUrl("https://webfasttech.com/")
-    }
-
-    // Handle the back button to navigate through WebView history
-    @Deprecated("This method has been deprecated in favor of using the\n      {@link OnBackPressedDispatcher} via {@link #getOnBackPressedDispatcher()}.\n      The OnBackPressedDispatcher controls how back button events are dispatched\n      to one or more {@link OnBackPressedCallback} objects.")
-    override fun onBackPressed() {
-        if (webView.canGoBack()) {
-            webView.goBack()
-        } else {
-            super.onBackPressed()
-        }
     }
 }
