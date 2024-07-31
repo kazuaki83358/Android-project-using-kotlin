@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Calling App</string>
+    <string name="welcome">Welcome</string>
+    <string name="video_call">Video Call</string>
+    <string name="audio_call">Audio Call</string>
+    <string name="start_audio_call">Start Audio Call</string>
+    <string name="end_audio_call">End Audio Call</string>
+    <string name="audio_call1">Audio Call</string>
+</resources>
